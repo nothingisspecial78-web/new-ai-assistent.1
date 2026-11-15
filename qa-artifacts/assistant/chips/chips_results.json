@@ -1,0 +1,114 @@
+[
+  {
+    "id": "CHIP-TEST-01",
+    "name": "Super Admin Platform Portal Chips",
+    "role": "SUPER_ADMIN",
+    "pageId": "/super-admin",
+    "passed": true,
+    "latencyMs": 6,
+    "chipCount": 4,
+    "sampleChips": [
+      "Platform Overview",
+      "Campus Overview",
+      "Colleges & Admins",
+      "Security Audit Logs"
+    ],
+    "details": "Returned 4 chips in 6ms matching role context"
+  },
+  {
+    "id": "CHIP-TEST-02",
+    "name": "Admin Student Directory Chips",
+    "role": "ADMIN",
+    "pageId": "admin.students",
+    "passed": true,
+    "latencyMs": 4,
+    "chipCount": 4,
+    "sampleChips": [
+      "Campus Overview",
+      "Bulk Import Excel",
+      "Guide: Import Students",
+      "Download Campus PDF"
+    ],
+    "details": "Returned 4 chips in 4ms matching role context"
+  },
+  {
+    "id": "CHIP-TEST-03",
+    "name": "Admin Sector Management Chips",
+    "role": "ADMIN",
+    "pageId": "admin.sectors",
+    "passed": true,
+    "latencyMs": 3,
+    "chipCount": 4,
+    "sampleChips": [
+      "Campus Overview",
+      "Guide: Create Sector",
+      "Download Campus PDF",
+      "Unassigned Sectors"
+    ],
+    "details": "Returned 4 chips in 3ms matching role context"
+  },
+  {
+    "id": "CHIP-TEST-04",
+    "name": "Sector Manager Ledger Chips",
+    "role": "SECTOR_MANAGER",
+    "pageId": "manager.entries",
+    "passed": true,
+    "latencyMs": 5,
+    "chipCount": 4,
+    "sampleChips": [
+      "Sector Total",
+      "Unpaid Students",
+      "Guide: Record Deposit",
+      "Recent Entries"
+    ],
+    "details": "Returned 4 chips in 5ms matching role context"
+  },
+  {
+    "id": "CHIP-TEST-05",
+    "name": "Student Personal Dashboard Chips",
+    "role": "STUDENT",
+    "pageId": "student.dashboard",
+    "passed": true,
+    "latencyMs": 4,
+    "chipCount": 4,
+    "sampleChips": [
+      "My Balance",
+      "Why Pending Fees?",
+      "Guide: Check My Fees",
+      "Recent Receipts"
+    ],
+    "details": "Returned 4 chips in 4ms matching role context"
+  },
+  {
+    "id": "CHIP-TEST-06",
+    "name": "Malayalam Localized Chips",
+    "role": "STUDENT",
+    "pageId": "student.dashboard",
+    "passed": true,
+    "latencyMs": 8,
+    "chipCount": 4,
+    "sampleChips": [
+      "എന്റെ ബാക്കി തുക",
+      "എന്തുകൊണ്ട് ഫീസ് കുടിശ്ശിക?",
+      "ഗൈഡ്: ഫീസ് പരിശോധിക്കുക",
+      "സമീപകാല രസീതുകൾ"
+    ],
+    "details": "Returned 4 chips in 8ms matching role context"
+  },
+  {
+    "id": "CHIP-TEST-07",
+    "name": "Public Unauthenticated Sign-in Chips",
+    "role": "PUBLIC",
+    "pageId": "public.login",
+    "passed": true,
+    "latencyMs": 5,
+    "chipCount": 4,
+    "sampleChips": [
+      "Guide: How to Log In",
+      "Create College Account",
+      "Password Help",
+      "What is Khazna Ledger?"
+    ],
+    "details": "Returned 4 chips in 5ms matching role context"
+  }
+]

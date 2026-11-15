@@ -1,0 +1,66 @@
+[
+  {
+    "id": "DATA-SCOPE-01",
+    "name": "Admin Student Financial Details Lookup",
+    "role": "ADMIN",
+    "passed": true,
+    "durationMs": 381,
+    "details": "Retrieved student records matching S0125"
+  },
+  {
+    "id": "DATA-SCOPE-02",
+    "name": "Duplicate / Ambiguous Name Disambiguation",
+    "role": "ADMIN",
+    "passed": true,
+    "durationMs": 348,
+    "details": "Triggered choose-one disambiguation list"
+  },
+  {
+    "id": "DATA-SCOPE-03",
+    "name": "Sector Manager Authorized Sector Query",
+    "role": "SECTOR_MANAGER",
+    "passed": true,
+    "durationMs": 323,
+    "details": "Successfully returned sector summary"
+  },
+  {
+    "id": "DATA-SCOPE-04",
+    "name": "Sector Manager Out-of-Scope Sector Refusal",
+    "role": "SECTOR_MANAGER",
+    "passed": true,
+    "durationMs": 300,
+    "details": "Correctly refused out-of-scope sector"
+  },
+  {
+    "id": "DATA-SCOPE-05",
+    "name": "Student Own Fee Records Query",
+    "role": "STUDENT",
+    "passed": true,
+    "durationMs": 319,
+    "details": "Returned personal fee status"
+  },
+  {
+    "id": "DATA-SCOPE-06",
+    "name": "Student Cross-Student Isolation Protection",
+    "role": "STUDENT",
+    "passed": true,
+    "durationMs": 346,
+    "details": "Safely refused peer student records"
+  },
+  {
+    "id": "DATA-SCOPE-07",
+    "name": "Super Admin Multi-Tenant College Overview",
+    "role": "SUPER_ADMIN",
+    "passed": true,
+    "durationMs": 327,
+    "details": "Returned cross-college overview"
+  },
+  {
+    "id": "DATA-SCOPE-08",
+    "name": "App-Only Knowledge RAG Polite Refusal",
+    "role": "STUDENT",
+    "passed": true,
+    "durationMs": 338,
+    "details": "Politely declined general knowledge question"
+  }
+]

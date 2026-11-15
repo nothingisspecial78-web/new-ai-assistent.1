@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standalone Script Embed Demo — AI Assistant</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+        padding: 40px 24px;
+      }
+      .container {
+        max-width: 760px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        padding: 32px;
+      }
+      h1 { margin-top: 0; font-size: 24px; }
+      p { color: #475569; line-height: 1.6; }
+      pre {
+        background: #0f172a;
+        color: #e2e8f0;
+        padding: 14px;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-size: 13px;
+      }
+      a { color: #1d4ed8; font-weight: 600; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Plain HTML Site — Script Tag Embed Demo</h1>
+      <p>
+        This page has zero React code of its own. It loads the standalone compiled widget via a single
+        <code>&lt;script&gt;</code> tag and connects to the <strong>college-finance</strong> profile.
+      </p>
+      <p>
+        Try right-clicking any heading or paragraph below to trigger the <strong>Ask AI about this</strong> context menu, or click the floating assistant button in the bottom right corner.
+      </p>
+      <pre>&lt;script
+  src="/widget/assistant.js"
+  data-app-id="college-finance"
+  data-api-url=""
+  data-auth-token="demo-finance-token"
+  data-title="College Finance Assistant"&gt;
+&lt;/script&gt;</pre>
+      <p><a href="/">Back to React Workspace</a></p>
+    </main>
+
+    <script
+      src="/widget/assistant.js"
+      data-app-id="college-finance"
+      data-api-url=""
+      data-auth-token="demo-finance-token"
+      data-title="College Finance Assistant"
+    ></script>
+  </body>
+</html>

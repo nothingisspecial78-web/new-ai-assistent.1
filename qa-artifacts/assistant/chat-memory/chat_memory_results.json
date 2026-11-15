@@ -1,0 +1,26 @@
+[
+  {
+    "id": "MEM-01",
+    "name": "Dynamic Conversation Thread Title Derivation",
+    "passed": true,
+    "details": "Generated clean title: \"What is the current fee for Fiqh 2 class?\""
+  },
+  {
+    "id": "MEM-02",
+    "name": "Multi-User Conversation Thread Isolation (Zero Leakage)",
+    "passed": true,
+    "details": "User A and User B thread histories strictly isolated"
+  },
+  {
+    "id": "MEM-03",
+    "name": "User Personalization Preferences Persistence",
+    "passed": true,
+    "details": "Persisted and reloaded user preference profile"
+  },
+  {
+    "id": "MEM-04",
+    "name": "Clear All User Threads & Clean Reset",
+    "passed": true,
+    "details": "Successfully wiped user conversations and reset to single clean thread"
+  }
+]

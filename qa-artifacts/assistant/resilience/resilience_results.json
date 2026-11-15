@@ -1,0 +1,20 @@
+[
+  {
+    "id": "RESIL-01",
+    "name": "Strict Sequential Fallback Chain Order (OpenRouter -> Gemini -> Groq)",
+    "passed": true,
+    "details": "Configured 3 providers in exact priority order: openrouter -> gemini -> groq"
+  },
+  {
+    "id": "RESIL-02",
+    "name": "LLM Gateway Live Availability & Health Status",
+    "passed": true,
+    "details": "LLM Gateway active and responding with live provider configuration"
+  },
+  {
+    "id": "RESIL-03",
+    "name": "End-to-End Chat Stream Execution via Fallback Chain",
+    "passed": true,
+    "details": "Successfully streamed response in 5ms without errors"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "SEC-01",
+    "name": "Missing App ID Header Rejection",
+    "passed": true,
+    "details": "HTTP 400 Bad Request correctly returned"
+  },
+  {
+    "id": "SEC-02",
+    "name": "Forged JWT Signature Rejection & Zero Elevation",
+    "passed": true,
+    "details": "Tampered token blocked from elevating to super_admin"
+  },
+  {
+    "id": "SEC-03",
+    "name": "Student Blocked from Super Admin Endpoints",
+    "passed": true,
+    "details": "HTTP 401 correctly returned for student token"
+  },
+  {
+    "id": "SEC-04",
+    "name": "Hardcoded Secret & API Key Leak Scan",
+    "passed": true,
+    "details": "Zero raw API keys or passwords in checked source files"
+  }
+]

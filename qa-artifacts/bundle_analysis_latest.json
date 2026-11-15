@@ -1,0 +1,104 @@
+{
+  "totalJsKb": 4063,
+  "totalGzipJsKb": 1142,
+  "initialJsKb": 916,
+  "initialGzipJsKb": 211,
+  "assets": [
+    {
+      "file": "vendor-docs-BZA03Awe.js",
+      "sizeBytes": 940846,
+      "sizeKb": 919,
+      "gzipBytes": 288368,
+      "gzipKb": 282,
+      "isInitial": false
+    },
+    {
+      "file": "index-Du8FLSA0.js",
+      "sizeBytes": 937706,
+      "sizeKb": 916,
+      "gzipBytes": 215906,
+      "gzipKb": 211,
+      "isInitial": true
+    },
+    {
+      "file": "vendor-three-DOr19wtM.js",
+      "sizeBytes": 552355,
+      "sizeKb": 539,
+      "gzipBytes": 136077,
+      "gzipKb": 133,
+      "isInitial": false
+    },
+    {
+      "file": "vendor-framework-B2iB3ivn.js",
+      "sizeBytes": 526958,
+      "sizeKb": 515,
+      "gzipBytes": 162795,
+      "gzipKb": 159,
+      "isInitial": false
+    },
+    {
+      "file": "pdf-YwugTw7Y.js",
+      "sizeBytes": 444231,
+      "sizeKb": 434,
+      "gzipBytes": 132487,
+      "gzipKb": 129,
+      "isInitial": false
+    },
+    {
+      "file": "vendor-charts-b2iZxMtr.js",
+      "sizeBytes": 414697,
+      "sizeKb": 405,
+      "gzipBytes": 119720,
+      "gzipKb": 117,
+      "isInitial": false
+    },
+    {
+      "file": "vendor-motion-Bl1uPgNt.js",
+      "sizeBytes": 165300,
+      "sizeKb": 161,
+      "gzipBytes": 55952,
+      "gzipKb": 55,
+      "isInitial": false
+    },
+    {
+      "file": "index.es-CYG2T20n.js",
+      "sizeBytes": 151423,
+      "sizeKb": 148,
+      "gzipBytes": 48528,
+      "gzipKb": 47,
+      "isInitial": false
+    },
+    {
+      "file": "vendor-icons-C7mtXcxn.js",
+      "sizeBytes": 25703,
+      "sizeKb": 25,
+      "gzipBytes": 8403,
+      "gzipKb": 8,
+      "isInitial": false
+    },
+    {
+      "file": "rolldown-runtime-XKyaHtl9.js",
+      "sizeBytes": 726,
+      "sizeKb": 1,
+      "gzipBytes": 429,
+      "gzipKb": 0,
+      "isInitial": false
+    },
+    {
+      "file": "__vite-browser-external_path-Dba1fi7g.js",
+      "sizeBytes": 459,
+      "sizeKb": 0,
+      "gzipBytes": 333,
+      "gzipKb": 0,
+      "isInitial": false
+    },
+    {
+      "file": "__vite-browser-external_fs-T8KOYUWE.js",
+      "sizeBytes": 440,
+      "sizeKb": 0,
+      "gzipBytes": 320,
+      "gzipKb": 0,
+      "isInitial": false
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "appName": "Khazna Campus Ledger",
+  "version": "1.0.0",
+  "roles": ["PUBLIC", "STUDENT", "SECTOR_MANAGER", "ADMIN", "SUPER_ADMIN"],
+  "viewports": [
+    { "name": "mobile", "width": 360, "height": 800 },
+    { "name": "tablet", "width": 768, "height": 1024 },
+    { "name": "desktop", "width": 1440, "height": 900 },
+    { "name": "wide", "width": 1920, "height": 1080 }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "role": "PUBLIC",
+      "redirectsTo": "/login",
+      "assistantExpected": false
+    },
+    {
+      "path": "/login",
+      "role": "PUBLIC",
+      "titleMatch": "Sign in",
+      "keySelectors": [
+        "[data-guide-id=\"auth-tab-signin\"]",
+        "[data-guide-id=\"auth-tab-signup\"]",
+        "[data-guide-id=\"login-role-admin\"]",
+        "[data-guide-id=\"login-role-manager\"]",
+        "[data-guide-id=\"login-role-student\"]",
+        "[data-guide-id=\"login-forgot-password\"]",
+        "[data-guide-id=\"login-submit\"]",
+        "[data-testid=\"assistant-launcher\"]"
+      ],
+      "assistantExpected": true
+    },
+    {
+      "path": "/super-admin/login",
+      "role": "PUBLIC",
+      "titleMatch": "Super Admin Portal",
+      "keySelectors": ["input[type=\"email\"]", "input[type=\"password\"]", "button[type=\"submit\"]", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/super-admin",
+      "role": "SUPER_ADMIN",
+      "guardRedirectTo": "/super-admin/login",
+      "keySelectors": ["h1", "table", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin",
+      "role": "ADMIN",
+      "guardRole": "admin",
+      "forbiddenTexts": ["New College Organisation", "Switch organisation", "Create & Open Workspace"],
+      "keySelectors": ["header", "main h1", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin/audit",
+      "role": "ADMIN",
+      "keySelectors": ["main h1", "input", "button", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin/issued-reports",
+      "role": "ADMIN",
+      "keySelectors": ["main h1", "input", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin/students",
+      "role": "ADMIN",
+      "keySelectors": ["main h1", "[data-guide-id=\"students-search-input\"]", "[data-guide-id=\"students-add-button\"]", "[data-guide-id=\"students-directory-table\"]", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin/students/import",
+      "role": "ADMIN",
+      "keySelectors": ["main h1", "[data-guide-id=\"import-download-template\"]", "[data-guide-id=\"import-dropzone\"]", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin/admins",
+      "role": "ADMIN",
+      "keySelectors": ["main h1", "button", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin/institution",
+      "role": "ADMIN",
+      "keySelectors": ["main h1", "button", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/admin/sectors",
+      "role": "ADMIN",
+      "keySelectors": ["main h1", "[data-guide-id=\"sectors-create-button\"]", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/m/dept-fiqh",
+      "role": "SECTOR_MANAGER",
+      "guardRole": "manager",
+      "keySelectors": ["header", "main h1", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/m/dept-fiqh/ledger",
+      "role": "SECTOR_MANAGER",
+      "keySelectors": ["main h1", "[data-guide-id=\"ledger-new-entry-button\"]", "[data-guide-id=\"ledger-search-input\"]", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/m/dept-fiqh/bulk",
+      "role": "SECTOR_MANAGER",
+      "keySelectors": ["main h1", "input", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/m/dept-fiqh/reports",
+      "role": "SECTOR_MANAGER",
+      "keySelectors": ["main h1", "button", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/m/dept-fiqh/batches",
+      "role": "SECTOR_MANAGER",
+      "keySelectors": ["main h1", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/app",
+      "role": "STUDENT",
+      "guardRole": "student",
+      "keySelectors": ["main h1", "[data-guide-id=\"student-dues-card\"]", "[data-guide-id=\"student-sectors-list\"]", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/app/s/dept-fiqh",
+      "role": "STUDENT",
+      "keySelectors": ["main h1", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/app/notifications",
+      "role": "STUDENT",
+      "keySelectors": ["main h1", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/app/profile",
+      "role": "STUDENT",
+      "keySelectors": ["main h1", "[data-guide-id=\"student-profile-card\"]", "[data-testid=\"assistant-launcher\"]"],
+      "assistantExpected": true
+    },
+    {
+      "path": "/v/nonexistent-qa-token",
+      "role": "PUBLIC",
+      "keySelectors": ["h1"],
+      "assistantExpected": false
+    },
+    {
+      "path": "/qa-nonexistent-page-404",
+      "role": "PUBLIC",
+      "keySelectors": ["h1"],
+      "expectedText": "404",
+      "assistantExpected": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "pageUrl": "/admin/students",
+    "role": "admin",
+    "scrollDurationMs": 1800,
+    "measuredFps": 19,
+    "longTasksDuringScroll": 4,
+    "jankDetected": true,
+    "avatarFps": 49
+  },
+  {
+    "pageUrl": "/admin/audit",
+    "role": "admin",
+    "scrollDurationMs": 1800,
+    "measuredFps": 30,
+    "longTasksDuringScroll": 6,
+    "jankDetected": true,
+    "avatarFps": 54
+  },
+  {
+    "pageUrl": "/m/dept-fiqh/ledger",
+    "role": "manager",
+    "scrollDurationMs": 1800,
+    "measuredFps": 32,
+    "longTasksDuringScroll": 1,
+    "jankDetected": true,
+    "avatarFps": 49
+  },
+  {
+    "pageUrl": "/app",
+    "role": "student",
+    "scrollDurationMs": 1800,
+    "measuredFps": 30,
+    "longTasksDuringScroll": 1,
+    "jankDetected": true,
+    "avatarFps": 57
+  }
+]
